@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1fd26bae29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/Shubham-design-beauty-name.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                     <li><a href="#contact">Contact</a></li> 
+                     <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> WEB DEVLOPER</p>
+                <h1>Hi, I'm <span>Shubham</span><br> from India</h1>
+            </div>
+        </div>
+    </div>
+<!-- ------------About------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="./images/WhatsApp Image 2025-02-17 at 11.55.35_2a7267d0.jpg">
+            </div>
+            <div class="about-col2">
+                <h1 class="subtitle">About me</h1>
+                <p>I am Shubham Kolekar,a BCA student passionate about learning and developing my skills in programming and 
+                  web development. I have experience with languages and technologies like PHP, Python, C, Advanced
+                   C, HTML, CSS, JavaScript MySQL, PostgreSQL, and more. I'm constantly 
+                  exploring new tools and techniques to nhance my knowledge and build practical solutions</p>
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('Education')" >Education</p>
+                      </div>
+                      <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                          <li><span>Languages</span><br>I am skilled in PHP, Python, C, HTML, CSS, JavaScript, MySQL, and
+                             PostgreSQL, with a focus on building efficient and scalable solutions.</li>
+                          <li><span>DATA BASE</span><br>I have experience working with MySQL and PostgreSQL, focusing on database
+                             design, queries, and optimization for efficient data management.</li>
+                          <li><span>SKILLS</span><br>I have a solid foundation in PHP, Python, C, HTML, CSS, JavaScript,
+                             MySQL, and PostgreSQL, focusing on creating efficient and scalable solutions. I'm passionate about
+                             problem-solving and continuously refining my skills to build seamless and dynamic applications.</li>
+                        </ul>
+                      </div> <div class="tab-contents" id="Experience">
+                        <ul>
+                          <li><span>Web developer</span><br>I developed a Metro webpage showcasing my skills 
+                            in creating responsive designs, interactive features, and seamless navigation</li>
+                          <li><span>BACKEND</span><br>I have basic experience in backend development, focusing on functionality,
+                             integration, and ensuring smooth system performance.</li>
+                          <li><span>FRONTEND</span><br>I have good experience in frontend development,
+                             creating responsive designs and interactive
+                             interfaces, with basic knowledge of backend functionality and integration.</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="Education">
+                        <ul>
+                          <li><span>Primary Education</span><br>Done from Late S.S.Barate E.M.School placed in warje malwadi</li>
+                          <li><span>Higher Eduacation</span><br>Done from Savitribai Phule sansta placed in warje</li>
+                          <li><span>Post Graduation</span><br>Doing in Garware College in Deccan </li>
+                        </ul>
+                      </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------services------------------ -->
+
+<div id="services">
+  <div class="container">
+    <h1 class="subtitle">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-brands fa-connectdevelop"></i>
+        <h2>Back end developer</h2>
+        <p>
+          Lorem ipsum dolor sit. yhgyrfg  ghriugh zdvnbdjfvh bbvajadfvbvzs fbh f f  
+          unt, voluptatibus illo?   iufifg f y gf  efbvgtaVV   edf  uffcu 
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Front end developer</h2>
+        <p>
+          Lorem ipsum dolor sit  fhwsefkjb  fhbgfv gggvs iuob ujh hg jggtg iguuy yguy 
+          unt, voluptatibus illo? EWTFGr ? RETF WEARG iohrg vdigvjvddnspov fsvjkbjf 
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store"></i>
+        <h2>Software developer</h2>
+        <p>
+          Lorem ipsum dolor sit ene hbfs fhsdbfjdbfiuhwd fertras da wedasdasd fet fsdf
+          unt, vo obcaecati nesciunt  erfwt ygrf wsqwdf4y gddffv DFSRG AFGRFSDF 
+        </p>
+        <a href="#">Learn More</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- ---------------------portfolio-------------------- -->
+
+<div id="portfolio">
+  <div class="comtainer">
+    <h1 class="subtitle">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="./images/mergesort.png">
+        <div class="layer">
+          <h3>Merge sort </h3>
+          <p>Merge sort is a sorting algorithm that follows the divide-and-conquer
+             approach. It works by recursively dividing the input array into smaller
+              subarrays and sorting those subarrays then merging them back together
+               to obtain the sorted array</p>
+          <a href="merge.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="./images/work-2.png">
+        <div class="layer">
+          <h3>Back End Dev</h3>
+          <p>This back end developping webpage is made for
+             helping the developer to simplyfy </p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="./images/work-3.png">
+        <div class="layer">
+          <h3>Back End Dev</h3>
+          <p>This back end developping webpage is made 
+            for helping the developer to simplyfy </p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+
+<!-- ---------------------Contact----------------------- -->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact ME</h1>
+        <p><i class="fa-solid fa-envelope"></i> shubhamkolekar465@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 8010615783</p>
+        <div class="social-icons">
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <a href="/images/my-cv.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="name" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="your message" rows="6" placeholder="Your message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright @ Shubham. Made with <i class="fa-solid fa-heart"></i></p>
+  </div>
+</div>
+<script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link") 
+          }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab")
+        }
+</script>
+
+<script>
+  var sidemenu = document.getElementById('sidemenu');
+  function openmenu(){
+    sidemenu.style.right = '0';
+  }
+
+  function closemenu(){
+    sidemenu.style.right = '-200px';
+  }
+</script>
+</body>
+</html> 
