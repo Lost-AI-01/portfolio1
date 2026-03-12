@@ -12,12 +12,14 @@ body{
     background: #080808;
     color: #fff;
 }
-#header{
-    width: 100%;
-    height: 100vh;
+#header {
+    width: 100%; /* Use 100% so it spans the screen, use padding for inner spacing */
+    height: 80vh;
     background-image: url('./images/portfolio-pic.png');
-    background-size: cover;
-    background-position: center;
+    background-size: 40%; /* This makes the image smaller, taking up only 40% of the header width */
+    background-position: right bottom; /* Valid CSS: pushes it to the bottom right corner */
+    background-repeat: no-repeat; /* Prevents the image from tiling over and over */
+    padding-left: 10%; /* Keeps your text pushed in from the left edge */
 }
 
 .container{
