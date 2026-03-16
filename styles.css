@@ -1,12 +1,16 @@
 /* 1. GLOBAL CSS VARIABLES (The Professional Standard) */
+/* 1. GLOBAL CSS VARIABLES (Updated for Light Mode) */
 :root {
-    --bg-color: #080808;
-    --card-bg: #262626;
-    --text-primary: #ffffff;
-    --text-secondary: #ababab;
+    --bg-color: #ffffff;          /* Core page background changed to White */
+    --card-bg: #f9f9f9;           /* Cards changed to a very subtle light gray */
+    --text-primary: #111111;      /* Core text changed to near-black for readability */
+    --text-secondary: #555555;    /* Sub-text changed to medium gray */
+    
+    /* Keep accent colors the same; they contrast well on white */
     --accent-color: #ff9100;
     --accent-hover: #d8550a;
     
+    /* Strict Typography Scale remains locked */
     --font-h1: 60px;
     --font-h2: 30px;
     --font-p: 16px;
