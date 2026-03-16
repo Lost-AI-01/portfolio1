@@ -213,5 +213,43 @@
         window.scrollTo({top: 0, behavior: 'smooth'});
     }
 </script>
+
+    <script>
+    // IDE Typing Effect Logic
+    const textArray = ["Full Stack Developer", "PHP Specialist", "Problem Solver"];
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typeTarget = document.getElementById("typewriter");
+
+    function typeEffect() {
+        const currentText = textArray[textIndex];
+        
+        if (isDeleting) {
+            typeTarget.textContent = currentText.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            typeTarget.textContent = currentText.substring(0, charIndex + 1);
+            charIndex++;
+        }
+
+        // Typing speed: slower when typing, faster when deleting
+        let typeSpeed = isDeleting ? 50 : 100;
+
+        if (!isDeleting && charIndex === currentText.length) {
+            typeSpeed = 2000; // Pause at the end of the word for 2 seconds
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % textArray.length; // Move to the next word
+            typeSpeed = 500; // Pause before typing the next word
+        }
+
+        setTimeout(typeEffect, typeSpeed);
+    }
+
+    // Start the typing effect 1 second after page load
+    setTimeout(typeEffect, 1000);
+</script>
 </body>
 </html>
