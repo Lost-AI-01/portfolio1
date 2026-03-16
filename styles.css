@@ -39,56 +39,41 @@ nav ul li a::after { content: ''; width: 0; height: 3px; background: var(--accen
 nav ul li a:hover::after { width: 100%; }
 
 
-/* 3. HERO SECTION & TERMINAL UI (Glassmorphism Light Mode Update) */
-.hero-content { 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    margin-top: 10%; 
-    flex-wrap: wrap; 
-}
+/* 3. HERO SECTION & TERMINAL UI (Live IDE Light Theme) */
+.hero-content { display: flex; align-items: center; justify-content: space-between; margin-top: 10%; flex-wrap: wrap; }
 .header-text { flex-basis: 50%; font-size: var(--font-h2); }
 .header-text h1 { font-size: var(--font-h1); margin-top: 20px; }
 .header-text h1 span { color: var(--accent-color); }
 
-/* The Glass Terminal Container */
 .hero-code-box {
     flex-basis: 40%;
-    background: rgba(255, 255, 255, 0.4); /* Translucent white base */
-    backdrop-filter: blur(12px); /* The mathematical blur effect */
-    -webkit-backdrop-filter: blur(12px); /* Safari browser support */
-    border: 1px solid rgba(255, 255, 255, 0.8); /* The sharp glass edge */
-    border-radius: 15px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10); /* Soft float shadow */
+    background: #ffffff; 
+    border: 1px solid #e1e4e8; /* Clean GitHub light theme border */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Very subtle shadow */
     overflow: hidden;
 }
 
-/* Glass Header with subtle bottom border */
-.code-header { 
-    background: rgba(255, 255, 255, 0.5); 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
-    padding: 12px; 
-    display: flex; 
-    gap: 8px; 
-}
-
-/* The Mac-style window buttons */
+.code-header { background: #f6f8fa; border-bottom: 1px solid #e1e4e8; padding: 12px; display: flex; gap: 8px; }
 .dot { width: 12px; height: 12px; border-radius: 50%; }
-.red { background: #ff5f56; } 
-.yellow { background: #ffbd2e; } 
-.green { background: #27c93f; }
+.red { background: #ff5f56; } .yellow { background: #ffbd2e; } .green { background: #27c93f; }
 
-/* Light Mode Syntax Highlighting */
-.code-content { 
-    padding: 20px; 
-    font-family: 'Courier New', Courier, monospace; 
-    font-size: 15px; 
-    color: #333333; /* Dark text for readability */
+.code-content { padding: 20px; font-family: 'Courier New', Courier, monospace; font-size: 16px; color: #24292e; }
+.keyword { color: #d73a49; } /* GitHub Red */
+.variable { color: #6f42c1; } /* GitHub Purple */
+.string { color: #032f62; } /* GitHub Blue */
+
+/* The Blinking Cursor Animation */
+.cursor { 
+    display: inline-block; 
+    width: 2px; 
+    color: #24292e; 
+    animation: blink 1s step-end infinite; 
+    margin-left: 2px;
 }
-.keyword { color: #0000ff; } /* Classic Blue */
-.variable { color: #0070c1; } /* Medium Blue */
-.string { color: #a31515; } /* Brick Red */
-.indent { padding-left: 20px; }
+@keyframes blink { 50% { opacity: 0; } }
+
+
 /* 4. ABOUT SECTION */
 #about { padding: 80px 0; }
 .row { display: flex; justify-content: space-between; flex-wrap: wrap; }
